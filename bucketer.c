@@ -10,6 +10,8 @@ struct CountsByUsage {
 struct CountsByUsage countBatteriesByUsage(const int* cycles, int nBatteries) {
   struct CountsByUsage counts = {0, 0, 0};
   int i;
+  
+  #Counting by usage
   for(i=0;i<nBatteries;i++)
   {
       if(cycles[i]<310)
